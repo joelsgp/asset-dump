@@ -24,7 +24,7 @@ $sizes = @(
 $name = [System.IO.Path]::GetFileNameWithoutExtension($Source);
 $sizes | ForEach-Object {
     inkscape $Source `
-        -o $(Join-Path $Dest "$name.$_.png") `
+        -o $(Join-Path $Dest "$name-${_}x$_.png") `
         --export-type=png `
         --export-area-page `
         --export-width=$_ `
