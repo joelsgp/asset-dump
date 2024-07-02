@@ -25,6 +25,18 @@ pink = "f5a9b8"
 white = "ffffff"
 yellow = "fdd910"
 
+mimi_blue = "4fd6d4"
+mimi_pink = "dd43e1"
+mimi_white = "f3ece7"
+mimi_black = "5f5b6a"
+
+to_rearrange = (
+    mimi_blue,
+    mimi_pink,
+    mimi_white,
+    mimi_black,
+)
+
 current = (
     pink,
     blue,
@@ -49,11 +61,13 @@ def replace(colours, out_name):
 
 
 def permute():
-    orderings = itertools.permutations((blue, pink, white))
+    orderings = itertools.permutations(to_rearrange)
     for colours in orderings:
         out_name = "palettes/" + "-".join(colours) + ".png"
         colours = list(colours)
-        colours.append(colours[1])
+        # make up arrow accent if only
+        # permuting three colours
+        # colours.append(colours[1])
         replace(colours, out_name)
 
 

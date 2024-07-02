@@ -7,7 +7,7 @@
    inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
    width="432.22253"
    height="304.54599"
-   sodipodi:docname="Mir_insignia.svg"
+   sodipodi:docname="Mir_variant.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    sodipodi:modified="true"
    version="1.0"
@@ -86,7 +86,7 @@
        id="swatch18"
        inkscape:swatch="solid">
       <stop
-         style="stop-color:#5bcefa;stop-opacity:1;"
+         style="stop-color:#ad1cb0;stop-opacity:1;"
          offset="0"
          id="stop18" />
     </linearGradient>
@@ -101,7 +101,7 @@
        id="swatch9"
        inkscape:swatch="solid">
       <stop
-         style="stop-color:#f5a9b8;stop-opacity:1;"
+         style="stop-color:#4fd6d4;stop-opacity:1;"
          offset="0"
          id="stop9" />
     </linearGradient>
@@ -116,7 +116,7 @@
        id="swatch6"
        inkscape:swatch="solid">
       <stop
-         style="stop-color:#f5a9b8;stop-opacity:1;"
+         style="stop-color:#f3ece7;stop-opacity:1;"
          offset="0"
          id="stop6" />
     </linearGradient>
@@ -131,7 +131,7 @@
        id="swatch4"
        inkscape:swatch="solid">
       <stop
-         style="stop-color:#ffffff;stop-opacity:1;"
+         style="stop-color:#5f5b6a;stop-opacity:1;"
          offset="0"
          id="stop4" />
     </linearGradient>
@@ -225,7 +225,7 @@
     </filter>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#swatch6"
+       xlink:href="#swatch18"
        id="linearGradient4"
        x1="114.00471"
        y1="151.6675"
@@ -234,7 +234,7 @@
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#swatch6"
+       xlink:href="#swatch18"
        id="linearGradient5"
        x1="12.371114"
        y1="152.27299"
@@ -243,7 +243,7 @@
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#swatch18"
+       xlink:href="#swatch4"
        id="linearGradient6"
        x1="21.941069"
        y1="152.27188"
@@ -252,7 +252,7 @@
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#swatch6"
+       xlink:href="#swatch18"
        id="linearGradient8"
        x1="-375.55859"
        y1="87.655327"
@@ -279,7 +279,7 @@
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#swatch4"
+       xlink:href="#swatch6"
        id="linearGradient18"
        x1="29.581293"
        y1="139.74818"
@@ -288,7 +288,7 @@
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#swatch4"
+       xlink:href="#swatch6"
        id="linearGradient28"
        gradientUnits="userSpaceOnUse"
        x1="29.581293"
@@ -298,7 +298,7 @@
        gradientTransform="translate(-6.474237,-1.4187037)" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#swatch4"
+       xlink:href="#swatch6"
        id="linearGradient29"
        gradientUnits="userSpaceOnUse"
        x1="29.581293"
@@ -307,7 +307,7 @@
        y2="139.74818" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#swatch4"
+       xlink:href="#swatch6"
        id="linearGradient1"
        x1="-220.94885"
        y1="-33.69054"
