@@ -1,3 +1,5 @@
+import itertools
+import subprocess
 from pathlib import Path
 
 
@@ -14,8 +16,8 @@ stop_num_arrows_accent = "stop9"
 order = (
     stop_num_lines,
     stop_num_badge_outer,
+    stop_num_badge_inner,
     stop_num_arrows_accent,
-    stop_num_badge_inner
 )
 
 blue = "5bcefa"
@@ -23,7 +25,12 @@ pink = "f5a9b8"
 white = "ffffff"
 yellow = "fdd910"
 
-current = (pink, blue, yellow, white)
+current = (
+    pink,
+    blue,
+    white,
+    yellow,
+)
 
 svg_path = Path("Mir_insignia.svg")
 temp_path = Path("Mir_variant.svg")
@@ -34,12 +41,22 @@ def replace(colours, out_name):
     for i in range(4):
         old = stop_template.format(current[i], order[i])
         new = stop_template.format(colours[i], order[i])
-        print(old)
-        print(new)
         contents = contents.replace(old, new)
     temp_path.write_text(contents)
 
+    subprocess.run(["inkscape", temp_path, "-o", out_name, "--export-type", "png"])
+
+
+
+def permute():
+    orderings = itertools.permutations((blue, pink, white))
+    for colours in orderings:
+        out_name = "palettes/" + "-".join(colours) + ".png"
+        colours = list(colours)
+        colours.append(colours[1])
+        replace(colours, out_name)
+
+
 
 if __name__ == "__main__":
-    replace(("ffffff", "ffffff", "ffffff", "ffffff", ), "abc.svg")
-
+    permute()
